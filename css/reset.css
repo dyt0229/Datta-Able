@@ -1,0 +1,162 @@
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background: #212224;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.cicleB{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: fixed;
+}
+.circleS{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+}
+.circleBigLeft{
+    background: linear-gradient(-135deg, #899FD4 0%, #A389D4 100%);
+    bottom: 0;
+    left: 0;
+    top: 290px;
+    right: 290px;
+    margin: auto;
+    transform-origin: 45%;
+    animation: zhuan 5s infinite;
+}
+.circleBigRight{
+    background: linear-gradient(-135deg, #1de9b6 0%, #1dc4e9 100%);
+    top: -290px;
+    bottom: 0;
+    left: 0;
+    right: -290px;
+    margin:auto;
+    transform-origin: 55%;
+    animation: zhuan 5s infinite;
+}
+.circleSmallLeft{
+    background: #1de9b6;
+    bottom: 0;
+    left: 0;
+    top: 200px;
+    right: 800px;
+    margin: auto;
+    transform-origin: -30%;
+    animation:zhuan 5s infinite;
+}
+.circleSmallRight{
+    background: #04a9f5;
+    bottom: 0;
+    left: 0;
+    top: -200px;
+    right: -800px;
+    margin: auto;
+    transform-origin: -30%;
+    animation:zhuan 5s infinite;
+}
+
+@keyframes zhuan {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.main {
+    width: 310px;
+    height: 290px;
+    padding: 30px 25px;
+    background: #323437;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.main img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.main h2 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 26px;
+    color: #c0c7cb;
+    margin-bottom: 26px;
+}
+.main .loginInput{
+    width: 310px;
+    height: 43px;
+    border: 1px solid #1a1a1c;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    background: #282a2c;
+    font-size: 16px;
+    text-indent: 20px;
+    color: #9ba0a4;
+}
+#rem{
+    width: 15px;
+    height: 15px;
+    opacity:0;
+    position: relative;
+    top:27px;
+}
+#rem+label{
+    display: block;
+    overflow: hidden;
+}
+#rem+label img{
+    width: 26px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#rem+label span{
+    float: left;
+    color: #9ba0a4;
+    font-size: 16px;
+    line-height: 23px;
+    margin-left: 10px;
+}
+.loginbtn{
+    display: block;
+    width: 70px;
+    height: 47px;
+    background: #04a9f5;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    outline: none;
+    margin: 20px auto;
+}
+.aBtn{
+    display: block;
+    color: #919ea7;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.aBtn1{
+    color: black;
+}

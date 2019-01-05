@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+ }
+
+body,
+html {
+    height: 100%;
+    background: #212224;
+}
+
+.main {
+    width: 734px;
+    height: 434px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 4px double #fff;
+    border-radius: 5px;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 120px;
+    line-height: 120px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 34px;
+    color: #616a78;
+    text-align: center;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #616a78;
+    line-height: 20px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: table;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 14px;
+    background: #faa700;
+    border-radius: 10px;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+        border: none;
+    }
+}

@@ -1,0 +1,1160 @@
+html,body{
+    height: 100%;
+    min-width: 463px;
+}
+body{
+    background: #212224;
+    display: -webkit-box;
+    display: -ms-flexbx;
+    display:-moz-box;
+    display: flex;
+}
+
+
+/* nav -----------------------------*/
+.nav{
+    width: 264px;
+    background: #323437;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbx;
+    display:-moz-box;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient:vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    /* -webkit-transition: all .1s; */
+    /* -moz-transition: all .1s; */
+    /* transition: all .1s; */
+    position: absolute;
+    z-index: 1000;
+}
+.isClick{
+    width: 100px;
+}
+.logo{
+    height: 35px;
+    padding-top: 18px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.logo img{
+    width: 35px;
+    float: left;
+    cursor: pointer;
+}
+.logo h2{
+    float: left;
+    color: white;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 10px;
+}
+.isClick .logo h2{
+    display: none;
+}
+.logo a{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(../imgs/index/nav-more.png) no-repeat center;
+    position: absolute;
+    top:29px;
+    right: 20px;
+}
+.isClick .logo a{
+    background: url(../imgs/index/navCuo.png) no-repeat center;
+}
+.navMain{
+    -webkit-box-flex: 1;
+    -moz-box-flex:1;
+    -ms-flex: 1;
+    flex:1;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+/* 设置滚动条的样式 */
+.navMain::-webkit-scrollbar{
+     width:5px;
+} 
+/* 滚动槽 */
+.navMain::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px  rgba(40, 42, 44, 1);
+    border-radius: 10px; */
+}
+/* 滚动条滑块 */
+.navMain::-webkit-scrollbar-thumb{
+    border-radius: 2.5px;
+    background: rgba(40,42,44,1);
+}
+.navMain::-webkit-scrollbar-thumb:window-inactive{
+    background: rgba(40,42,44,1);
+}
+.nav-lists{
+    padding-top:20px;
+}
+.title-nav{
+    font-size: 12px;
+    color: white;
+    line-height: 12px;
+    text-indent: 20px;
+    margin-bottom: 22px;
+}
+.nav-lists .nav-list-li{
+    width: 100%;
+    height: 44px;
+    border-left: 3px solid #1e1f21;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 18px;
+    position: relative;
+    cursor: pointer;
+}
+.nav-list-li img{
+    margin-top: 14px;
+    margin-right: 13px;
+    float: left;
+}
+.nav-list-li h2{
+    font-size: 12px;
+    color:white;
+    line-height: 44px;
+    float: left;
+    /* transition: all 500ms; */
+}
+.isClick .nav-list-li h2{
+    text-indent: -200px;
+}
+.nav-list-li a{
+    display: block;
+    width: 7px;
+    height: 9px;
+    background: url(../imgs/index/list-jiantou.png) no-repeat center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 24px;
+    margin:auto 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+.nav-list-ul{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 32px;
+    cursor: pointer;
+    border-left: 3px solid #1dc4e9;
+    display: none;
+}
+.nav-list-ul li{
+    font-size: 12px;
+    color: white;
+    line-height: 35px;
+    text-indent: 25px;
+}
+.isClick .nav-list-ul li{
+    text-indent: -200px;
+}
+.nav-list-ul .default-li{
+    background: url(../imgs/index/list-dian.png) no-repeat left center;
+}
+.nav-list-ul li:hover{
+    background: url(../imgs/index/list-dian.png) no-repeat left center;
+}
+.mainLeft{
+    width: 264px;
+    height: 100%;
+    position: relative;
+    /* background: red; */
+    transition: all 500ms;
+}
+.isClick .mainLeft{
+    width: 100px;
+}
+
+/* content--------------------------------------------- -------------*/
+.main{
+    -webkit-box-flex:1;
+    -ms-flex: 1;
+    -moz-box-flex: 1;
+    flex:1;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
+/* 设置滚动条的样式 */
+.main::-webkit-scrollbar{
+    width: 12px;
+}
+/* 滚动槽 */
+.main::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(40,42,44,1);
+    border-radius: 6px;
+}
+/* 滚动条滑块 */
+.main::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: rgba(40, 42, 44, 1);
+}
+/* header---------------- ----------------------------------------*/
+.mainHeader{
+    width: 100%;
+    height: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 28px 0 28px 26px;
+    position: relative;
+}
+/* fullScreen */
+#fullScreen{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../imgs/index/quanping.png);
+    float: left;
+    margin-right: 14px;
+}
+.selectBox{
+    display: table;
+    float: left;
+    /* overflow: hidden; */
+    cursor: pointer;
+    position: relative;
+}
+.selectBox b{
+    font-weight: normal;
+    color: #adb7be;
+    font-size: 14px;
+    line-height: 14px;
+    float: left;
+    padding:0 10px;
+}
+.selectBox img{
+    float: left;
+    margin-top:5px;
+    margin-right: 19px; 
+}
+.selectBox:hover .seTxtb{
+    color: white;
+}
+
+.selectBoxDetail{
+    width: 290px;
+    background: #323437;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top:42px;
+    left: -17px;
+    box-sizing: border-box;
+    padding:20px 0;
+    z-index: 1;
+    display: none;
+}
+.selectBoxDetail ul{
+    width: 100%;
+    cursor: pointer;
+    color: #a9b3ba;
+}
+.selectBoxDetail ul li{
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    padding:0 25px;
+}
+.selectBoxDetail ul li:hover{
+    background: #3f4244;
+}
+.selectBoxScTop{
+    position: absolute;
+    top:-14px;
+    left: 21px;
+}
+
+
+
+/* seek */
+.seek{
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: url(../imgs/index/seek.png) no-repeat center;
+}
+.inputSeek{
+    float: left;
+    /* width: 165px; */
+    width: 0;
+    height: 40px;
+    border-radius: 40px;
+    /* border:none; */
+    border:1px solid #465159;
+    background: #2d2f31;
+    margin-top: -14px;
+    overflow: hidden;
+    box-sizing: border-box;
+    opacity: 0;
+    /* display: none; */
+}
+.inputSeek input{
+    float: left;
+    border:none;
+    width: 112px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-indent: 22px;
+    background: #2d2f31;
+}
+.closeSeek{
+    width: 10px;
+    height: 40px;
+    float: left;
+    background: url(../imgs/index/inputguan.png) no-repeat center;
+}
+.btnSeek{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #04a9f5;
+    float: left;
+    margin-top: 6px;
+    margin-left: 8px;
+    position: relative;
+}
+.btnSeek img{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+/* rightConfig---------------------- */
+.rightConfig{
+    float: right;
+    margin-right: 10px;
+    position: relative;
+}
+.rightConfig a{
+    display: block;
+    overflow: hidden;
+    margin-right: 30px;
+    float: left;
+}
+.iconA {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 3px;
+}
+.btnX {
+    margin-top: 5px;
+}
+
+/* setting ----------------------*/
+.setting{
+    width: 290px;
+    height: 254px;
+    background: #323437;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    display: none;
+}
+.messtop{
+    position: absolute;
+    top:-9px;
+    right: 21px;
+}
+.settingHead{
+    background: #46484c;
+    width: 100%;
+    height: 70px;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:15px 0 0 15px;
+    margin-bottom: 20px;
+}
+.settingHead>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.settingHead>h2{
+    font-size: 14px;
+    color: #a9b3ba;
+    float: left;
+    padding-left: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.settingHead>a{
+    display: block;
+    width: 14px;
+    height: 16px;
+    float: right;
+    margin-right: 13px;
+    margin-top: 14.5px;
+    background: url(../imgs/index/loginOut.png) no-repeat center;
+}
+.setting>ul{
+    width: 100%;
+}
+.setting>ul li{
+    width: 100%;
+    height: 36px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:11px 0 0 20px;
+}
+.setting>ul li:hover{
+    background: #2d404a;
+}
+.setting>ul li>img{
+    width: 14px;
+    height: 14px;
+    margin-right: 14px;
+    float: left;
+}
+.setting>ul li>span{
+    font-size: 14px;
+    line-height: 14px;
+    color: #a9b2b9;
+    float: left;
+}
+
+/* newsInfo----------- */
+.newsInfo{
+    width: 350px;
+    height: 384px;
+    background: #323437;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 36px;
+    right: 118px;
+    display: none;
+    z-index: 1;
+}
+.informtop{
+    position: absolute;
+    top:-9px;
+    right: 21px;
+}
+.infoTit{
+    width: 100%;
+    height: 53px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #2d2f31;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: 12px;
+}
+.infoTit span{
+    float: left;
+    height: 53px;
+    line-height: 53px;
+    margin-right: 150px;
+    color: #adb7be; 
+}
+.infoTit a{
+    float: left;
+    height: 53px;
+    line-height: 53px;
+    margin-right: 15px;
+    color: #adb7be;
+    text-decoration: underline;
+}
+.newsInfo ul{
+    width: 100%;
+    padding-top:17px;
+    box-sizing: border-box;
+    position: relative; 
+}
+.newsInfo ul h2{
+    font-size: 12px;
+    color: #adb7be;
+    line-height: 20px;
+    padding-left: 20px;
+    padding-bottom: 7px;
+}
+.newsInfo ul li{
+    width: 100%;
+    height: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.newsInfo ul li>img{
+    float: left;
+}
+.infoinform {
+    float: left;
+    padding-left: 20px;
+    width: 190px;
+}
+.infoinform h5 {
+    font-size: 12px;
+    color: #c9d0d5;
+    height: 16px;
+    margin-bottom: 7px;
+}
+.infoinform h4 {
+    font-size: 12px;
+    color: #c9d0d5;
+    font-weight: normal;
+}
+.timeInfo {
+    display: inline-block;
+    position: absolute;
+}
+.timeIco {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    float: left;
+    padding-top: 2px;
+}
+.timeInfo {
+    font-size: 12px;
+    color: #c9d0d5;
+    float: left;
+}
+.showAll{
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #2d2f31;
+    text-align: center;
+}
+.showAll a{
+    color: #a9b2b9;
+    line-height: 50px;
+    width: 100%;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* 聊天室-------------------- */
+.chatBox{
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -386px;
+    /* right: 0px; */
+    background: #282a2c;
+    border-left: 1px solid #444647;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+}
+.ChatControls{
+    position: absolute;
+    top: 150px;
+    left: -36px;
+    display: block;
+    width: 36px;
+    height: 131px;
+    background: url(../imgs/index/ChatControls.png) no-repeat top left;
+}
+/* seekChat------------ */
+.seekChat{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #1a1a1c;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 16px;
+}
+#seekChat{
+    width: 320px;
+    height: 43px;
+    border: 1px solid #1a1a1c;
+    background: #323437;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 auto 15px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-indent: 20px;
+}
+.chatMain{
+    width: 100%;
+    overflow: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.chatMain::-webkit-scrollbar{
+    display: none;
+}
+.chatMain li{
+    height: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1a1a1c;
+    position: relative;
+    cursor: pointer;
+}
+.chatMain li img{
+    padding-top: 15px;
+    float: left;
+}
+.chatLi{
+    float: left;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 12px;
+}
+.chatLi h2 {
+    color: #b6bcc0;
+    line-height: 12px;
+    margin-bottom: 15px;
+}
+.chatLi h3 {
+    color: #1dc4e9;
+    line-height: 12px;
+}
+.chatMain li span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 12px;
+    background: url(../imgs/index/onlineChat.png) center;
+}
+.off-line {
+    color: #88949c !important;
+}
+.do-Not {
+    color: #d23150 !important;
+}
+/* 聊天框---------- */
+.chatFrame {
+    width: 100%;
+    height: 100%;
+    background: #212224;
+    position: absolute;
+    right: -100%;
+    /* right: 0; */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.chatMainCon {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.chatMainCon::-webkit-scrollbar {
+    display: none;
+}
+.chatFrameTit {
+    width: 100%;
+    height: 57px;
+    border-bottom: 1px solid #1a1a1c;
+    background: #282a2c;
+    color: #b6bcc0;
+    line-height: 57px;
+    text-align: center;
+    position: relative;
+}
+.closeChat {
+    width: 9px;
+    height: 13px;
+    background: url(../imgs/index/fanhui.png);
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.inputCon {
+    width: 100%;
+    height: 60px;
+    background: #212224;
+    position: absolute;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.chatContent {
+    width: 292px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: url(../imgs/index/input.png);
+    color: #a6aaaf;
+    font-size: 12px;
+    text-indent: 38px;
+}
+.send {
+    width: 36px;
+    height: 36px;
+    border: none;
+    outline: none;
+    background: url(../imgs/index/xiaoxi.png);
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fujian {
+    width: 26px;
+    height: 26px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    background: url(../imgs/index/fujian.png) no-repeat center;
+    position: absolute;
+    top: 7px;
+    left: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.fujian1 {
+    width: 26px;
+    opacity: 0;
+    cursor: pointer;
+}
+.chatLeft {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.chatRight {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.touxiangLeft {
+    float: left;
+    margin-right: 15px;
+}
+.neirongLeft{
+    max-width:255px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #0d0e0f;
+    padding:20px;
+    float: left;
+    font-size: 12px;
+    line-height: 24px;
+    color: #e5e5e6;
+    position: relative;
+    -moz-border-radius: 0 10px 10px 10px;
+    border-radius: 0 10px 10px 10px;
+}
+.leftmsg {
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.neirongRight{
+    max-width: 255px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #2d2f31;
+    padding: 20px;
+    float: right;
+    font-size: 12px;
+    line-height: 24px;
+    color: #e5e5e6;
+    position: relative;
+    -moz-border-radius: 10px 10px 0px 10px;
+    border-radius: 10px 10px 0px 10px;
+    margin-right: 40px;
+}
+.rightmsg {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+}
+.leftTime{
+    width: 100%;
+    padding-left: 90px;
+    font-size: 12px;
+    color: #acb6bc;
+    float: left;
+    margin-top: 10px;
+}
+.rightTime{
+    width:100%;
+    font-size: 12px;
+    color: #acb6bc;
+    float: right;
+    margin-top: 10px;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 24px;
+}
+
+
+/* mainChart------------------------------------------------------- */
+.mainChart{
+    width: 100%;
+    height: auto;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.chartTop{
+   
+}
+.mainContTop h1{
+    color: #c9d0d5;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.mainContTop h2 {
+    color: #c9d0d5;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.mainContTop h2 img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tongzhiBox {
+    width: 100%;
+    height: 98px;
+    background: #cce5ff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 21px 0 0 21px;
+    margin-bottom: 16px;
+}
+
+.tongzhiBox h2 {
+    color: #1c7aa5;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 25px;
+}
+
+.tongzhiBox h3 {
+    font-size: 14px;
+    line-height: 14px;
+    color: #a09eaf;
+}
+.chartCont{
+    width: 100%;
+    background: #323437;
+    height: auto;
+}
+.titCon{
+    width: 100%;
+    height: 62px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #2b2c2f;
+    padding-top: 21px;
+}
+.titCon h2{
+    color: #9fabb3;
+    font-size: 16px;
+    padding-left: 21px;
+    border-left: 4px solid #46484c;
+    line-height: 16px;
+}
+.subTit{
+    height: 110px;
+    margin:16px 25px 0;
+    border-bottom:1px solid #282a2c;
+}
+.subTit h1{
+    font-size: 25px;
+    color:#c9d0d0;
+    line-height: 54px;
+}
+.subTit h3{
+    font-size: 16px;
+    color:#c9d0d0;
+    line-height:50px;
+}
+.subChart{
+    width: 100%;
+    height: 482px;
+}
+.subChart:last-child{
+    margin-bottom: 30px;
+}
+#pieChart{
+    width: 100%;
+    height: 100%;
+}
+#xyChart{
+    width: 100%;
+    height: 100%;
+}
+#demo-wrapper{
+   width: 100%;
+    height: 100%; 
+}
+#mapChart{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 响应 */
+@media screen and (max-width:1175px){
+    .nav{
+        width: 100px;
+    }
+    .mainLeft{
+        width:100px;
+    }
+    #moreNav{
+        background: url(../imgs/index/navCuo.png) no-repeat center;
+        opacity: .5;
+        /* display: none; */
+    }
+    .logo h2{
+        display: none;
+    }
+    .nav-list-li h2{
+        text-indent: -200px;
+    }
+    .nav-list-ul li{
+        text-indent: -200px;
+    }
+    .chartTop{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* display: inline-block; */
+        height: auto;
+        /* overflow: hidden; */
+    }
+    .chartTopList{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        margin-right: 0;
+        /* float: left; */
+        /* margin-right: 30px; */
+    }
+    .chartTopList:nth-child(1),.chartTopList:nth-child(2){
+        /* float: left; */
+        /* flex:45%; */
+        /* width: 42%; */
+        /* max-width: 100%; */
+    }
+    .chartTopList:nth-child(2){
+        /* float: right; */
+        /* margin-right: 0; */
+    }
+    .chartTopList:nth-child(3){
+        /* width: 100%; */
+        margin-bottom: 0;
+        /* margin-right: 0; */
+    }
+    .chartMap{
+        width:50%;
+    }
+    .mapRight{
+        width: 50%;
+    }
+    .chartThird{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+    }
+    .socialList{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .socialList:nth-child(3){
+        margin-bottom: 0;
+    }
+    .chartFourL{
+        flex:1;
+    }
+    .chartFourR{
+        flex:1;
+    }
+
+}
+@media screen and (max-width:985px){
+    .nav{
+        width: 100%;
+        height:70px;
+        /* position: relative; */
+    }
+    .navMain{
+        display: none;
+    }
+    .mainLeft{
+        display: none;
+    }
+    .mainHeader{
+        background:#393b3f; 
+        top:70px;
+    }
+    
+    .nav .logo{
+        display: block;
+        width: 100%;
+        /* overflow: hidden; */
+    }
+    .logo h2{
+        display: block;
+    }
+    #moreNav{
+        background: url(../imgs/index/nav-more.png) no-repeat center;
+        opacity: 1;
+        display: block;
+    }
+    .mainChart{
+        margin-top: 100px;
+    }
+    .main::-webkit-scrollbar{
+    width: 0px;
+    }
+    .mainChart{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
+@media screen and (max-width:753px){
+    .chartMain{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+    }
+    .chartMap{
+        width: 100%;
+        margin-bottom: 30px;
+        overflow: hidden;
+        /* height: auto; */
+    }
+    .mapRight{
+        width: 100%;
+    }
+    .chartFour{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+    }
+    .chartFourL{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .chartFourR{
+        width: 100%;
+    }
+    .mapRightBotList{
+        padding:30px 25px;
+    }
+}
