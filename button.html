@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Datta Able-chart</title>
+    <title>Datta Able-button</title>
     <link rel="stylesheet" href="css/public.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/chart.css" />
-    <!-- Resources -->
-    <script src="https://www.amcharts.com/lib/4/core.js"></script>
-    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
-    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
-    <script src="https://www.amcharts.com/lib/4/geodata/usaLow.js"></script>
-    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <link rel="stylesheet" href="css/button.css" />
+    
 </head>
 <body>
     <!-- nav -->
@@ -660,8 +655,9 @@
         <div class="mainChart">
             <!-- 图表上部分 -->
             <div class="mainContTop">
-                <h1>amChart4</h1>
-                <h2><img src="imgs/inform/home.png" />　/　Chart　/　amChart4</h2>
+                <h1>Button</h1>
+                <h2><img src="imgs/inform/home.png" />　/　Basic Components
+　/　Button</h2>
                 <div class="tongzhiBox">
                     <h2>Use our extra helper file for quick setup Charts in your page - <b>CHECKOUT</b></h2>
                     <h3>Copy/paste source code in your page in just couples of seconds.</h3>
@@ -669,52 +665,224 @@
             </div>
             <!-- 图表部分 -->
             <div class="chartCont">
-                <div class="titCon">
-                    <h2>AmChart</h2>
-                </div>
-                <div class="subTit">
-                    <h1>Pie Chart</h1>
-                    <h3>Pie [ With Legend ] Chart</h3>
-                </div>
-                <div class="subChart">
-                    <div id="pieChart"></div>
-                </div>
-                <div class="subTit">
-                    <h1>XY Chart</h1>
-                    <h3>XY [ Stacked 1 ] Chart</h3>
-                </div>
-                <div class="subChart">
-                    <div id="xyChart"></div>
-                </div>
-                <div class="subTit">
-                    <h1>Map Chart</h1>
-                    <h3>Map [ Heat-Map ] Chart</h3>
-                </div>
-                <div class="subChart">
-                    <div id="mapChart"></div>
-                    <!-- <div id="demo-wrapper">
-                        <div id="mapBox">
-                            <div id="up"></div>
-                            <div class="selector">
-                                <button id="btn-prev-map" class="prev-next"><i class="fa fa-angle-left"></i></button>
-                                <select id="mapDropdown" class="ui-widget combobox"></select>
-                                <button id="btn-next-map" class="prev-next"><i class="fa fa-angle-right"></i></button>
+                    <ul class="mainCont">
+                        <li>
+                            <div class="titCon">
+                                <h2>Default</h2>
                             </div>
-                            <div id="container"></div>
-                        </div>
-                        <div id="sideBox">
-                            <input type="checkbox" id="chkDataLabels" checked='checked' />
-                            <label for="chkDataLabels" style="display: inline">显示数据标签</label>
-                            <div id="infoBox">
-                                <div id="download"></div>
+                            <div class="mainBtnCont">
+                                <div class="aBox aBox1">
+                                    <a href="">Primary</a>
+                                    <a href="">Secondary</a>
+                                    <a href="">Success</a>
+                                    <a href="">Danger</a>
+                                    <a href="">Warning</a>
+                                    <a href="">INfo</a>
+                                    <a href="">Light</a>
+                                    <a href="">Dark</a>
+                                    <a href="">Link</a>
+                                </div>
+                                
                             </div>
-                        </div>
-                    </div> -->
-                </div>
+                        </li>
+                        <li>
+                            <div class="titCon">
+                                <h2>Outline</h2>
+                            </div>
+                            <div class="mainBtnCont">
+                                <div class="aBox aBox2">
+                                    <a href="">Primary</a>
+                                    <a href="">Secondary</a>
+                                    <a href="">Success</a>
+                                    <a href="">Danger</a>
+                                    <a href="">Warning</a>
+                                    <a href="">INfo</a>
+                                    <a href="">Light</a>
+                                    <a href="">Dark</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="titCon">
+                                <h2>Square Button</h2>
+                            </div>
+                            <div class="mainBtnCont">
+                                <p>use <span>.btn-square</span> in class <span>.btn</span> class to get square button</p>
+                                <div class="aBox aBox1 aBox3">
+                                    <a href="">Primary</a>
+                                    <a href="">Secondary</a>
+                                    <a href="">Success</a>
+                                    <a href="">Danger</a>
+                                    <a href="">Warning</a>
+                                    <a href="">INfo</a>
+                                    <a href="">Light</a>
+                                    <a href="">Dark</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="titCon">
+                                <h2>Disabled Button</h2>
+                            </div>
+                            <div class="mainBtnCont">
+                                <p>use <span>.disabled</span> in class <span>.btn</span> class to get Disabled button</p>
+                                <div class="aBox aBox1 aBox4">
+                                    <a>Primary
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>Secondary
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>Success
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>Danger
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>Warning
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>INfo
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>Light
+                                        <span class="bgA"></span>
+                                    </a>
+                                    <a>Dark
+                                        <span class="bgA"></span>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        
+                        </li>
+                        <li>
+                            <div class="titCon">
+                                <h2>Rounded Button</h2>
+                            </div>
+                            <div class="mainBtnCont">
+                                <div class="mainSub">
+                                    <p>use <span>.btn-round</span> in class <span>.btn</span> class to get Rounded button</p>
+                                    <div class="aBox aBox1 aBox3 aBox5">
+                                        <a href="">Primary</a>
+                                        <a href="">Secondary</a>
+                                        <a href="">Success</a>
+                                        <a href="">Danger</a>
+                                        <a href="">Warning</a>
+                                        <a href="">INfo</a>
+                                        <a href="">Light</a>
+                                        <a href="">Dark</a>
+                                    </div>
+                                </div>
+                                <div class="mainSub">
+                                    <p>use <span> .btn-round </span> in class <span>.btn-outline-*</span> class to get Rounded button</p>
+                                    <div class="aBox aBox2 aBox3 aBox6">
+                                        <a href="">Primary</a>
+                                        <a href="">Secondary</a>
+                                        <a href="">Success</a>
+                                        <a href="">Danger</a>
+                                        <a href="">Warning</a>
+                                        <a href="">INfo</a>
+                                        <a href="">Light</a>
+                                        <a href="">Dark</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        </li>
+                        <li>
+                            <div class="titCon">
+                                <h2>Glow Button</h2>
+                            </div>
+                            <div class="mainBtnCont">
+                                <p>use <span>.btn-glow</span> in class <span>.btn</span> class to get Glow button</p>
+                                <div class="aBox aBox1 aBox7">
+                                    <a href="">Primary</a>
+                                    <a href="">Secondary</a>
+                                    <a href="">Success</a>
+                                    <a href="">Danger</a>
+                                    <a href="">Warning</a>
+                                    <a href="">INfo</a>
+                                    <a href="">Light</a>
+                                    <a href="">Dark</a>
+                                </div>
+                            </div>
+                        
+                        </li>
+                        <li>
+                            <div class="titCon">
+                                <h2>Shadow Button</h2>
+                            </div>
+                            <div class="mainBtnCont">
+                                <p>use <span>.shadow-{ 1 / 2 / 3 / 4 / 5 }</span> in class <span>.btn</span> class to get square button</p>
+                                <div class="aBox aBox1 aBox8">
+                                    <a href="">.shaow-1</a>
+                                    <a href="">.shaow-2</a>
+                                    <a href="">.shaow-3</a>
+                                    <a href="">.shaow-4</a>
+                                    <a href="">.shaow-5</a>
+                                </div>
+                            </div>
+                        
+                        </li>
+                        <li class="liDoub">
+                            <div class="liList">
+                                <div class="titCon">
+                                    <h2>Sizes [ Large ]</h2>
+                                </div>
+                                <div class="mainBtnCont">
+                                    <p>use <span>.btn-lg</span> in class <span>.btn</span> class to get large button</p>
+                                    <div class="aBox aBox1 aBox8">
+                                        <a href="">Large button</a>
+                                        <a href="">Large button</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="liList">
+                                <div class="titCon">
+                                    <h2>Sizes [ Small ]</h2>
+                                </div>
+                                <div class="mainBtnCont">
+                                    <p>use <span>.btn-sm</span> in class <span>.btn</span> class to get small button</p>
+                                    <div class="aBox aBox1 aBox8">
+                                        <a href="">Small button</a>
+                                        <a href="">Small button</a>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </li>
+                        <li class="liDoub">
+                            <div class="liList">
+                                <div class="titCon">
+                                    <h2>Checkbox Button</h2>
+                                </div>
+                                <div class="mainBtnCont">
+                                    
+                                    <div class="aBox aBox9">
+                                        <a href="">Checked</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="liList">
+                                <div class="titCon">
+                                    <h2>Radio Buttons</h2>
+                                </div>
+                                <div class="mainBtnCont">
+                                    <div class="aBox aBox9">
+                                        <a href="">Active</a>
+                                        <a href="">Radio</a>
+                                        <a href="">Radio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
             </div>
-              
-                     
-        </div>
+                
+                
         
     </div>
 </body>
@@ -722,304 +890,18 @@
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/sliderTools.js"></script>
+<script type="text/javascript" src="js/move.js"></script>
+
 <!-- <script type="text/javascript" src="js/echartsAll.js"></script> -->
-<!-- <script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script> -->
-<!-- <script src="https://cdn.hcharts.cn/highstock/highstock.js"></script> -->
-<!-- <script src="https://cdn.hcharts.cn/highmaps/highmaps.js"></script> -->
-<!-- <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script> -->
-<!-- <script src="https://img.hcharts.cn/highcharts/themes/dark-unica.js"></script> -->
-<!-- <script src="js/exporting.js"></script> -->
+<!-- <script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://cdn.hcharts.cn/highstock/highstock.js"></script>
+<script src="https://cdn.hcharts.cn/highmaps/highmaps.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts/themes/dark-unica.js"></script>
+<script src="js/exporting.js"></script> -->
 
 <script type="text/javascript">
-    // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('pieChart'));
-    option = {
-        // title: {
-        //     subtext: '虚构数据',
-        //     left: 'center'
-        // },
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        color: ['#c767dc', '#a367dc', '#8067dc', '#6771dc', '#6794dc','#67b7dc'],
-        legend: {
-            // orient: 'vertical',
-            // top: 'middle',
-            bottom: 10,
-            left: 'center',
-            data: ['Belgium:7.5%', 'UK:12.5%', 'Austria:16.1%', 'Austrialia:16.7%', 'Germany:20.9%','Lithuania:25.4%']
-        },
-        series: [
-            {
-                type: 'pie',
-                radius: '65%',
-                center: ['50%', '50%'],
-                selectedMode: 'single',
-                data: [
-                    {value: 254,name: 'Lithuania:25.4%' },
-                    { value:209, name: 'Germany:20.9%' },
-                    { value: 167, name: 'Austrialia:16.7%' },
-                    { value: 161, name: 'Austria:16.1%' },
-                    { value: 125, name: 'UK:12.5%' },
-                    { value: 75, name: 'Belgium:7.5%' },
-                ],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    };
-    myChart.setOption(option);
     
 
-
-
-
-
-    var myChart1 = echarts.init(document.getElementById('xyChart'));
-    //交易量/交易数
-    option1 = {
-        timeline: {
-            data: [
-                '754', '200', '530', '251', '379', '200', '290', '90', '240', '254', '215', '90', '192', '146', '110', '56', '92', '30'
-            ],
-            left: '10%',
-            right: '10%',
-            bottom: 0,
-            height: -120,
-            axisType: 'category',
-            show: true,
-            autoPlay: false,
-            playInterval: 1000,
-            checkpointStyle: {
-                color: '#04a5f1',
-                borderColor: 'rgba(4, 165, 261, .5)'
-            },
-            label: {
-                normal: {
-                    formatter: function (v) {
-                        var _txt = v.replace(/\//igm, '\n');
-                        return _txt;
-                    },
-                    rotate: -45,
-                    position: 'bottom',
-                    fontSize: '10'
-                }
-            },
-            itemStyle: {
-                normal: {
-                    color: '#04a5f1'
-                },
-
-            },
-            lineStyle: {
-                color: '#ddd'
-            },
-            controlStyle: {
-                show: false,
-            },
-        },
-        options: [{
-            textStyle: {
-                fontSize: 22,
-                height: 80,
-            },
-            tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                    type: 'cross',
-                    label: {
-                        backgroundColor: 'rgba(255,255,255,0.8)',
-                        extraCssText: 'box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);',
-                        textStyle: {
-                            color: '#666',
-                        },
-                    },
-                },
-                backgroundColor: 'rgba(255,255,255,0.8)',
-                extraCssText: 'box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);',
-                textStyle: {
-                    color: '#666',
-                },
-            },
-            toolbox: {
-                'show': false,
-                // orient: 'vertical',
-                //x: 'right',
-                //y: 'center',
-                feature: {
-                    'magicType': {
-                        'show': true,
-                        'type': ['bar', 'line']
-                    },
-                    restore: {
-                        'show': true
-                    },
-                    saveAsImage: {
-                        'show': true
-                    }
-                }
-            },
-            legend: {
-                data: ['交易量', '交易数'],
-            },
-            grid: {
-                top: '100',
-                left: '3%',
-                right: '4%',
-                bottom: '60',
-                containLabel: true
-            },
-            xAxis: [{
-                type: 'category',
-                data: ['8.20', '8.21', '8.22', '8.23', '8.24', '8.25', '8.26','8.27','8.28','8.29','8.30','8.31','9.1','9.2','9.3','9.4','9.5','9.6'],
-                axisLabel: { //坐标轴刻度标签的相关设置。
-                    interval: 0, //设置为 1，表示『隔一个标签显示一个标签』
-                    //rotate:-30,
-                    textStyle: {
-                        color: '#666',
-                        fontSize: '22',
-                    }
-                },
-                axisLine: { //坐标轴轴线相关设置
-                    lineStyle: {
-                        color: '#666',
-                        opacity: 1
-                    }
-                },
-                splitLine: { //坐标轴在 grid 区域中的分隔线。
-                    show: false,
-                }
-            }],
-            yAxis: [{
-                name: '交易量（万个）',
-                type: 'value',
-
-                axisLabel: {
-                    textStyle: {
-                        color: '#666',
-                        fontSize: '22'
-                    }
-                },
-                axisLine: {
-                    show: false
-                },
-                axisTick: {
-                    show: false
-                },
-                splitLine: {
-                    show: false,
-                }
-
-            }, {
-                name: '交易数（笔）',
-                type: 'value',
-                position: 'right',
-                axisLabel: {
-                    textStyle: {
-                        color: '#666',
-                        fontSize: '22',
-                    }
-                },
-                axisLine: {
-                    show: false
-                },
-                axisTick: {
-                    show: false
-                },
-                splitLine: {
-                    show: false,
-                }
-            }],
-            series: [{
-                'name': '交易量',
-                'type': 'bar',
-                // barWidth: 15,
-                'data': [754, 200, 530, 251, 379, 200, 290,90,240,254,215,90,192,146,110,56,92,30],
-                itemStyle: {
-                    normal: {
-                        //barBorderRadius: 15,
-                        color: new echarts.graphic.LinearGradient(
-                            0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#229aff'
-                            },
-                            {
-                                offset: 1,
-                                color: '#13bfe8'
-                            }
-                            ]
-                        )
-                    }
-                }
-            }, {
-                name: '交易数',
-                yAxisIndex: 1,
-                type: 'line',
-                showAllSymbol: true,
-                symbol: 'emptyCircle',
-                symbolSize: 14,
-                data: [754, 200, 530, 251, 379, 200, 290, 90, 240, 254, 215, 90, 192, 146, 110, 56, 92, 30],
-                itemStyle: {
-                    normal: {
-                        color: '#fdb94e'
-                    },
-                },
-            }]
-        }]
-    };
-    myChart1.setOption(option1);
-
-    
-
-
-
-    
-
-    // Themes begin
-        am4core.useTheme(am4themes_animated);
-        // Themes end
-
-        // Create map instance
-        var chart = am4core.create("mapChart", am4maps.MapChart);
-
-        // Set map definition
-        chart.geodata = am4geodata_worldLow;
-
-        // Set projection
-        chart.projection = new am4maps.projections.Miller();
-
-        // Series for World map
-        var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
-        worldSeries.exclude = ["AQ"];
-        worldSeries.useGeodata = true;
-
-        var polygonTemplate = worldSeries.mapPolygons.template;
-        polygonTemplate.tooltipText = "{name}";
-        polygonTemplate.fill = chart.colors.getIndex(0);
-
-        // Hover state
-        var hs = polygonTemplate.states.create("hover");
-        hs.properties.fill = am4core.color("#367B25");
-
-        // Series for United States map
-        var usaSeries = chart.series.push(new am4maps.MapPolygonSeries());
-        usaSeries.geodata = am4geodata_usaLow;
-
-        var polygonTemplate = usaSeries.mapPolygons.template;
-        polygonTemplate.tooltipText = "{name}";
-        polygonTemplate.fill = chart.colors.getIndex(1);
-
-        // Hover state
-        var hs = polygonTemplate.states.create("hover");
-        hs.properties.fill = am4core.color("#367B25");
-        window.addEventListener("resize", function () {
-                myChart.resize();
-                myChart1.resize();
-            })
 </script>

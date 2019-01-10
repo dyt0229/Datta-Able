@@ -317,7 +317,28 @@ $(function(){
     });
 
 
-
+    //点击导航栏跳转页面
+    $(".tiaoindex").click(function(){
+        location.href="index.html"
+    });
+    $(".tiao1").click(function () {
+        location.href = "chart.html"
+    });
+    $(".tiao2").click(function () {
+        location.href = "google-chart.html"
+    });
+    $(".tiao3").click(function () {
+        location.href = "alert.html"
+    });
+    $(".tiao4").click(function () {
+        location.href = "progress.html"
+    });
+    $(".tiao5").click(function () {
+        location.href = "error404.html"
+    });
+    $(".tiao6").click(function () {
+        location.href = "button.html"
+    });
 
 
 });
